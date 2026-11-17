@@ -11,7 +11,7 @@ from bobber import BANDS, FRAMES, TEMPLATES
 RECORD = False       # True = stream raw audio to the Mac over serial, nothing else
 ARMED = True         # False = only log, never press space
 REACT = True         # False = ignore bites, only recast every CAST_TIMEOUT (for recording)
-MATCH = 0.55         # bite = fingerprint match >= MATCH (bites scored 0.60-0.94 at both spots)
+MATCH = 0.52         # bites scored 0.55-0.94 across 3 spots, non-bites up to 0.51; a false press only costs a recast, a missed bite up to 31 s
 SPLASH = 10.0        # timeout probe: high-pitch energy > SPLASH x ambient = the press cast the line
                      # (casts 14-129, reel-in presses 3-6 across spots)
 AMBIENT_SECS = 1.0   # how many seconds of sound the ambient average covers
