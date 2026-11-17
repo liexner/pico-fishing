@@ -1,0 +1,6 @@
+# game audio is the game's copyright: each user copies their own from the game files
+sounds/
+# raw personal recordings, large
+recordings/
+__pycache__/
+.DS_Store
